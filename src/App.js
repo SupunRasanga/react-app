@@ -1,21 +1,27 @@
 import './App.css';
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import StudentForm from './components/Form/StudentForm';
+import Navigation from './components/Navigation/Navigation';
+import Table from './components/Table/Table';
 
 
 
 
 function App() {
+
   return (
-    <div className="App">
-      <h2 >Hello</h2>
-
-
-      <Button>Primary</Button>
-
-
+    <div>
+        <Navigation></Navigation>
+        <div className="row">
+          <div className="col-8">
+            <Table></Table>
+          </div>
+          <div className="col-4">
+            <StudentForm></StudentForm>
+          </div>
+        </div>
+        
     </div>
-
     
   );
 }
